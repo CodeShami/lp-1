@@ -1,0 +1,578 @@
+/* 0. GENERAL style
+ * 1. section NAVIGATION
+ * 2. section HEADER
+ * 3. section STORY
+ * 4. section INGREDIENTS
+ * 5. section MENU
+ * 6. section REVIEWS
+ * 7. section RESERVE
+ * 8. section FOOTER
+ */
+/*    GENERAL style
+ ************************* */
+/* line 16, ../sass/main.sass */
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* line 24, ../sass/main.sass */
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16;
+  font-weight: 300;
+  background-color: #fff;
+}
+
+/* line 30, ../sass/main.sass */
+.wrapper {
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+
+/* line 36, ../sass/main.sass */
+.container {
+  width: 100%;
+  max-width: 1170px;
+  height: auto;
+  margin: 0 auto;
+}
+
+/* line 42, ../sass/main.sass */
+a {
+  letter-spacing: 1px;
+  text-decoration: none;
+  color: #fff;
+}
+
+/* line 47, ../sass/main.sass */
+h1,
+h2,
+h3 {
+  font-family: "Marck Script", cursive;
+}
+
+/* line 52, ../sass/main.sass */
+h1 {
+  font-size: 90px;
+  text-align: center;
+}
+
+/* line 56, ../sass/main.sass */
+.head__section {
+  width: 50%;
+  height: auto;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 1.4;
+}
+
+/* line 64, ../sass/main.sass */
+h2 {
+  font-size: 36px;
+  color: #fff;
+}
+
+/* line 68, ../sass/main.sass */
+.color--red {
+  color: #fb5231;
+}
+
+/* line 71, ../sass/main.sass */
+img {
+  margin: 15px 0 40px;
+}
+
+/* line 74, ../sass/main.sass */
+.img__cook {
+  margin: 50px 0 0;
+}
+
+/* line 77, ../sass/main.sass */
+.button {
+  width: 230px;
+  height: 60px;
+  padding-top: 20px;
+  display: inline-block;
+  text-align: center;
+  background: rgba(144, 50, 33, 0.8);
+  -webkit-transition: font-weight 0.3s linear, background-color 0.3s linear;
+  transition: font-weight 0.3s linear, background-color 0.3s linear;
+}
+/* line 89, ../sass/main.sass */
+.button:hover {
+  font-weight: 500;
+  background: #F7D700;
+}
+
+/**    1. section NAVIGATION
+ ************************* */
+/* line 99, ../sass/main.sass */
+nav {
+  width: 100%;
+  height: auto;
+  padding: 19px 0 46px;
+  display: -ms-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+/* line 114, ../sass/main.sass */
+nav img {
+  margin-left: 130px;
+}
+/* line 117, ../sass/main.sass */
+nav .nav__links a {
+  padding: 10px 30px;
+}
+/* line 120, ../sass/main.sass */
+nav .nav__icons {
+  width: 15%;
+  display: -ms-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #fff;
+}
+
+/**    2. section HEADER
+ ************************* */
+/* line 133, ../sass/main.sass */
+.header {
+  width: 100%;
+  height: 100vh;
+  background: url("/assets/images/promo_1.jpg") no-repeat;
+  background-size: cover;
+}
+/* line 140, ../sass/main.sass */
+.header .header__inner {
+  width: 100%;
+  height: 100vh;
+  display: -ms-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #fff;
+}
+/* line 154, ../sass/main.sass */
+.header .header__inner h1 {
+  margin-bottom: 50px;
+}
+/* line 157, ../sass/main.sass */
+.header .header__inner .header__buttons {
+  margin-top: 150px;
+}
+/* line 160, ../sass/main.sass */
+.header .header__inner .header__buttons a {
+  margin-right: 30px;
+}
+/* line 163, ../sass/main.sass */
+.header .header__inner .header__buttons a .right-zero {
+  margin-right: 0;
+}
+
+/**    3. section STORY
+ ************************* */
+/* line 173, ../sass/main.sass */
+.story {
+  width: 100%;
+  height: 700px;
+  padding-top: 110px;
+  background: url("/assets/images/bg_story.png") no-repeat center center;
+  background-size: cover;
+  background: linear-gradient 133deg, #000, #fff;
+  -webkit-box-shadow: inset 0 0 50px 10px rgba(0, 0, 0, 0.14);
+          box-shadow: inset 0 0 50px 10px rgba(0, 0, 0, 0.14);
+}
+
+/**    4. section INGREDIENTS
+ ************************* */
+/* line 188, ../sass/main.sass */
+.ingredients {
+  width: 100%;
+  height: auto;
+}
+/* line 192, ../sass/main.sass */
+.ingredients .container {
+  display: -ms-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+/* line 199, ../sass/main.sass */
+.ingredients .container img.img__ingr {
+  width: 100%;
+  max-width: 580px;
+  height: 410px;
+}
+
+/* line 204, ../sass/main.sass */
+.ingredients__spice {
+  width: 100%;
+  max-width: 570px;
+  height: 758px;
+  padding-top: 120px;
+  background: url("/assets/images/bg_ingredients.png") no-repeat;
+  background-size: contain;
+}
+/* line 213, ../sass/main.sass */
+.ingredients__spice .head__section {
+  width: 60%;
+  color: #fff;
+}
+/* line 217, ../sass/main.sass */
+.ingredients__spice .head__section h2 {
+  color: #fff;
+}
+/* line 220, ../sass/main.sass */
+.ingredients__spice .head__section img.img__cook {
+  margin-right: 5px;
+  border: 3px solid #fb5231;
+  border-radius: 50%;
+}
+/* line 225, ../sass/main.sass */
+.ingredients__spice .head__section:nth-last-of-type(img) {
+  margin-right: 0;
+}
+
+/**    5. section MENU
+ ************************* */
+/* line 234, ../sass/main.sass */
+.menu {
+  width: 100%;
+  height: auto;
+  padding-bottom: 100px;
+  background: #1a1f3b url("/assets/images/bg_menu.png") no-repeat center center;
+  background-size: cover;
+  position: relative;
+}
+/* line 244, ../sass/main.sass */
+.menu .menu__img {
+  position: absolute;
+}
+/* line 247, ../sass/main.sass */
+.menu .menu__img.img--fish {
+  left: 65px;
+  bottom: 270px;
+}
+/* line 251, ../sass/main.sass */
+.menu .menu__img.img--sushi {
+  right: 65px;
+  bottom: 200px;
+}
+/* line 255, ../sass/main.sass */
+.menu .container {
+  height: 100%;
+  display: -ms-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+/* line 264, ../sass/main.sass */
+.menu .container .menu__block {
+  width: 50%;
+  height: auto;
+  margin-top: 100px;
+  display: -ms-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+/* line 274, ../sass/main.sass */
+.menu .container .menu__block .head__section img {
+  margin-bottom: 20px;
+}
+/* line 277, ../sass/main.sass */
+.menu .container .menu__block .menu__table {
+  margin: 0 auto;
+  color: #fff;
+  letter-spacing: 1px;
+}
+/* line 282, ../sass/main.sass */
+.menu .container .menu__block .menu__table .menu__food {
+  font-weight: 500;
+  font-size: 21px;
+  text-align: left;
+  padding-top: 50px;
+}
+/* line 288, ../sass/main.sass */
+.menu .container .menu__block .menu__table .menu__food sup {
+  padding: 1px 3px;
+  font-size: 10px;
+  font-style: italic;
+  background: #fb5231;
+  color: #fff;
+}
+/* line 295, ../sass/main.sass */
+.menu .container .menu__block .menu__table .menu__price {
+  font-family: "Yeseva One", cursive;
+  font-size: 21px;
+  text-align: right;
+  padding-top: 50px;
+}
+/* line 301, ../sass/main.sass */
+.menu .container .menu__block .menu__table td {
+  font-size: 14px;
+  font-style: italic;
+  padding: 5px 0;
+  border-bottom: 1px solid rgba(251, 82, 49, 0.5);
+}
+
+/**    6. section REVIEWS
+ ************************* */
+/* line 313, ../sass/main.sass */
+.reviews {
+  width: 100%;
+  height: auto;
+  padding: 150px 0;
+}
+/* line 318, ../sass/main.sass */
+.reviews__rating {
+  text-align: center;
+  margin-top: 30px;
+  color: #fac917;
+}
+
+/**    7. section RESERVE
+ ************************* */
+/* line 328, ../sass/main.sass */
+.reserve {
+  width: 100%;
+  height: auto;
+  padding: 120px 0;
+  background: url("/assets/images/bg_reserve.png") no-repeat center center;
+  background-size: cover;
+  background: linear-gradient 133deg, #000, #fff;
+  -webkit-box-shadow: inset 0 0 50px 10px rgba(0, 0, 0, 0.18);
+          box-shadow: inset 0 0 50px 10px rgba(0, 0, 0, 0.18);
+}
+/* line 338, ../sass/main.sass */
+.reserve .container {
+  display: -ms-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+/* line 344, ../sass/main.sass */
+.reserve .container .block--img {
+  width: 49%;
+  display: -ms-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+/* line 352, ../sass/main.sass */
+.reserve .container .block--img img {
+  width: 47%;
+}
+/* line 355, ../sass/main.sass */
+.reserve__block {
+  width: 43%;
+  height: auto;
+}
+/* line 359, ../sass/main.sass */
+.reserve__block .head__section {
+  width: 100%;
+  font-size: 14px;
+}
+/* line 363, ../sass/main.sass */
+.reserve .form {
+  display: -ms-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+/* line 369, ../sass/main.sass */
+.reserve .form .block__input {
+  display: -ms-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 100px;
+}
+/* line 378, ../sass/main.sass */
+.reserve .form .block__input .input__items {
+  width: 45%;
+  margin-bottom: 40px;
+  display: -ms-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-weight: 500;
+  color: #fb5231;
+}
+/* line 390, ../sass/main.sass */
+.reserve .form .block__input .input__items input {
+  height: 40px;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #c8c6c6;
+}
+/* line 396, ../sass/main.sass */
+.reserve .form .block__input .input__items input:focus {
+  border: 1px solid #fb5231;
+}
+/* line 399, ../sass/main.sass */
+.reserve .form .block__btn {
+  text-align: center;
+}
+/* line 402, ../sass/main.sass */
+.reserve .form .block__btn .button {
+  background: #fb5231;
+}
+
+/**    8. section FOOTER
+ ************************* */
+/* line 411, ../sass/main.sass */
+.footer {
+  width: 100%;
+  height: auto;
+  padding: 70px 0 30px;
+  background: #1a1f3b url("/assets/images/bg_footer.png") no-repeat center center;
+  background-size: cover;
+}
+/* line 419, ../sass/main.sass */
+.footer__block {
+  display: -ms-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  color: #fff;
+}
+/* line 429, ../sass/main.sass */
+.footer__block--item {
+  width: 33%;
+  height: auto;
+  display: -ms-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+/* line 439, ../sass/main.sass */
+.footer__block--social {
+  display: -ms-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+/* line 446, ../sass/main.sass */
+.footer__block .footer__social {
+  margin-bottom: 30px;
+}
+/* line 450, ../sass/main.sass */
+.footer__block .fa-facebook, .footer__block .fa-twitter, .footer__block .fa-pinterest, .footer__block .fa-youtube, .footer__block .fa-linkedin {
+  width: 40px;
+  height: 35px;
+  margin-right: 10px;
+  padding: 10px;
+  border-radius: 20%;
+  -webkit-transition: color 0.3s linear, background-color 0.3s linear;
+  transition: color 0.3s linear, background-color 0.3s linear;
+}
+/* line 463, ../sass/main.sass */
+.footer__block .fa-facebook:hover, .footer__block .fa-twitter:hover, .footer__block .fa-pinterest:hover, .footer__block .fa-youtube:hover, .footer__block .fa-linkedin:hover {
+  background: #fff;
+  border-radius: 20%;
+  cursor: pointer;
+}
+/* line 473, ../sass/main.sass */
+.footer__block .fa-facebook:hover {
+  color: #3b5998;
+}
+/* line 476, ../sass/main.sass */
+.footer__block .fa-twitter:hover {
+  color: #00acee;
+}
+/* line 479, ../sass/main.sass */
+.footer__block .fa-pinterest:hover {
+  color: #c8232c;
+}
+/* line 482, ../sass/main.sass */
+.footer__block .fa-youtube:hover {
+  color: #c4302b;
+}
+/* line 485, ../sass/main.sass */
+.footer__block .fa-linkedin:hover {
+  color: #0e76a8;
+}
+/* line 488, ../sass/main.sass */
+.footer .copyright {
+  font-size: 12px;
+  letter-spacing: 1px;
+}

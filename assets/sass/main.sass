@@ -1,0 +1,490 @@
+/*
+	0. GENERAL style
+	1. section NAVIGATION
+	2. section HEADER
+	3. section STORY
+	4. section INGREDIENTS
+	5. section MENU
+	6. section REVIEWS
+	7. section RESERVE
+	8. section FOOTER
+	*/
+
+/*    GENERAL style
+	************************* **/
+
+*,
+	::before,
+	::after
+	margin: 0
+	padding: 0
+	box-sizing: border-box
+
+
+body
+	font-family: 'Montserrat', sans-serif
+	font-size: 16
+	font-weight: 300
+	background-color: #fff
+
+.wrapper
+	width: 100%
+	height: auto
+
+	position: relative
+
+.container
+	width: 100%
+	max-width: 1170px
+	height: auto
+	margin: 0 auto
+
+a
+	letter-spacing: 1px
+	text-decoration: none
+	color: #fff
+
+h1,
+h2,
+h3
+	font-family: 'Marck Script', cursive
+
+h1
+	font-size: 90px
+	text-align: center
+
+.head__section
+	width: 50%
+	height: auto
+	margin: 0 auto
+
+	text-align: center
+	line-height: 1.4
+
+h2
+	font-size: 36px
+	color: #fff
+
+.color--red
+	color: #fb5231
+
+img
+	margin: 15px 0 40px
+
+.img__cook
+	margin: 50px 0 0
+
+.button
+	width: 230px
+	height: 60px
+	padding-top: 20px
+
+	display: inline-block
+	text-align: center
+
+	background: rgba(144, 50, 33, .8)
+
+	transition: font-weight .3s linear, background-color .3s linear
+
+	&:hover
+		font-weight: 500
+		background: #F7D700
+
+
+
+
+/**    1. section NAVIGATION
+	************************* **/
+
+nav
+	width: 100%
+	height: auto
+	padding: 19px 0 46px
+
+	display: -webkit-flex
+	display: -ms-flex
+	display: flex
+	justify-content: space-evenly
+	align-items: center
+
+	position: absolute
+	left: 0
+	top: 0
+
+	img
+		margin-left: 130px
+
+	.nav__links a
+		padding: 10px 30px
+
+	.nav__icons
+		width: 15%
+
+		display: -webkit-flex
+		display: -ms-flex
+		display: flex
+		color: #fff
+
+
+
+/**    2. section HEADER
+	************************* **/
+
+.header
+	width: 100%
+	height: 100vh
+
+	background: url('/assets/images/promo_1.jpg') no-repeat
+	background-size: cover
+
+	.header__inner
+		width: 100%
+		height: 100vh
+
+
+		display: -webkit-flex
+		display: -ms-flex
+		display: flex
+		flex-direction: column
+		align-items: center
+		justify-content: center
+
+		color: #fff
+
+		h1
+			margin-bottom: 50px
+
+		.header__buttons
+			margin-top: 150px
+
+			a
+				margin-right: 30px
+
+				.right-zero
+					margin-right: 0
+
+
+
+
+/**    3. section STORY
+	************************* **/
+
+
+.story
+	width: 100%
+	height: 700px
+	padding-top: 110px
+
+	background: url('/assets/images/bg_story.png') no-repeat center center
+	background-size: cover
+	background: linear-gradient (133deg, #000, #fff)
+	box-shadow: inset 0 0 50px 10px rgba(0, 0, 0, .14)
+
+
+
+/**    4. section INGREDIENTS
+	************************* **/
+
+.ingredients
+	width: 100%
+	height: auto
+
+	.container
+		display: -webkit-flex
+		display: -ms-flex
+		display: flex
+		justify-content: space-between
+		align-items: center
+
+		img.img__ingr
+			width: 100%
+			max-width: 580px
+			height: 410px
+
+.ingredients__spice
+	width: 100%
+	max-width: 570px
+	height: 758px
+	padding-top: 120px
+
+	background: url('/assets/images/bg_ingredients.png') no-repeat
+	background-size: contain
+
+	.head__section
+		width: 60%
+		color: #fff
+
+		h2
+			color: #fff
+
+		img.img__cook
+			margin-right: 5px
+			border: 3px solid #fb5231
+			border-radius: 50%
+
+		&:nth-last-of-type(img)
+			margin-right: 0
+
+
+
+
+/**    5. section MENU
+	************************* **/
+
+.menu
+	width: 100%
+	height: auto
+	padding-bottom: 100px
+
+	background: #1a1f3b url('/assets/images/bg_menu.png') no-repeat center center
+	background-size: cover
+
+	position: relative
+
+	.menu__img
+		position: absolute
+
+		&.img--fish
+			left: 65px
+			bottom: 270px
+
+		&.img--sushi
+			right: 65px
+			bottom: 200px
+
+	.container
+		height: 100%
+
+		display: -webkit-flex
+		display: -ms-flex
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-between
+
+		.menu__block
+			width: 50%
+			height: auto
+			margin-top: 100px
+
+			display: -webkit-flex
+			display: -ms-flex
+			display: flex
+			flex-direction: column
+
+			.head__section img
+				margin-bottom: 20px
+
+			.menu__table
+				margin: 0 auto
+				color: #fff
+				letter-spacing: 1px
+
+				.menu__food
+					font-weight: 500
+					font-size: 21px
+					text-align: left
+					padding-top: 50px
+
+					sup
+						padding: 1px 3px
+						font-size: 10px
+						font-style: italic
+						background: #fb5231
+						color: #fff
+
+				.menu__price
+					font-family: 'Yeseva One', cursive
+					font-size: 21px
+					text-align: right
+					padding-top: 50px
+
+				td
+					font-size: 14px
+					font-style: italic
+					padding: 5px 0
+					border-bottom: 1px solid rgba(251, 82, 49, .5)
+
+
+
+
+/**    6. section REVIEWS
+	************************* **/
+
+.reviews
+	width: 100%
+	height: auto
+	padding: 150px 0
+
+	&__rating
+		text-align: center
+		margin-top: 30px
+		color: #fac917
+
+
+
+/**    7. section RESERVE
+	************************* **/
+
+.reserve
+	width: 100%
+	height: auto
+	padding: 120px 0
+
+	background: url('/assets/images/bg_reserve.png') no-repeat center center
+	background-size: cover
+	background: linear-gradient (133deg, #000, #fff)
+	box-shadow: inset 0 0 50px 10px rgba(0, 0, 0, .18)
+
+	.container
+		display: -webkit-flex
+		display: -ms-flex
+		display: flex
+		justify-content: space-between
+
+		.block--img
+			width: 49%
+
+			display: -webkit-flex
+			display: -ms-flex
+			display: flex
+			justify-content: space-between
+
+			img
+				width: 47%
+
+	&__block
+		width: 43%
+		height: auto
+
+		.head__section
+			width: 100%
+			font-size: 14px
+
+	.form
+		display: -webkit-flex
+		display: -ms-flex
+		display: flex
+		flex-direction: column
+
+		.block__input
+			display: -webkit-flex
+			display: -ms-flex
+			display: flex
+			justify-content: space-between
+			flex-wrap: wrap
+
+			margin-top: 100px
+
+			.input__items
+				width: 45%
+				margin-bottom: 40px
+
+				display: -webkit-flex
+				display: -ms-flex
+				display: flex
+				flex-direction: column
+
+				font-weight: 500
+				color: #fb5231
+
+				input
+					height: 40px
+					padding: 10px
+					margin-top: 5px
+					border: 1px solid #c8c6c6
+
+					&:focus
+						border: 1px solid #fb5231
+
+		.block__btn
+			text-align: center
+
+			.button
+				background: #fb5231
+
+
+
+
+/**    8. section FOOTER
+	************************* **/
+
+.footer
+	width: 100%
+	height: auto
+	padding: 70px 0 30px
+
+	background: #1a1f3b url('/assets/images/bg_footer.png') no-repeat center center
+	background-size: cover
+
+	&__block
+		display: -webkit-flex
+		display: -ms-flex
+		display: flex
+		flex-wrap: wrap
+		justify-content: center
+
+		text-align: center
+		color: #fff
+
+		&--item
+			width: 33%
+			height: auto
+
+			display: -webkit-flex
+			display: -ms-flex
+			display: flex
+			flex-direction: column
+			justify-content: center
+
+		&--social
+			display: -webkit-flex
+			display: -ms-flex
+			display: flex
+			flex-direction: column
+			align-items: center
+
+		.footer__social
+			margin-bottom: 30px
+
+		.fa
+			&-facebook,
+			&-twitter,
+			&-pinterest,
+			&-youtube,
+			&-linkedin
+				width: 40px
+				height: 35px
+				margin-right: 10px
+				padding: 10px
+				border-radius: 20%
+
+				transition: color .3s linear, background-color .3s linear
+
+			&-facebook:hover,
+			&-twitter:hover,
+			&-pinterest:hover,
+			&-youtube:hover,
+			&-linkedin:hover
+				background: #fff
+				border-radius: 20%
+
+				cursor: pointer
+
+			&-facebook:hover
+				color: #3b5998
+
+			&-twitter:hover
+				color: #00acee
+
+			&-pinterest:hover
+				color: #c8232c
+
+			&-youtube:hover
+				color: #c4302b
+
+			&-linkedin:hover
+				color: #0e76a8
+
+	.copyright
+		font-size: 12px
+		letter-spacing: 1px
